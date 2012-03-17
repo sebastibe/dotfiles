@@ -21,3 +21,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$PATH"
+
+alias ipython="python -c 'import IPython; 
+IPython.Shell.IPShell().mainloop()'"
+alias bpython="python -m bpython.cli"

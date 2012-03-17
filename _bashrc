@@ -3,4 +3,4 @@ export PATH=$PATH:/opt/node/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/
 
 alias ipython="python -c 'import IPython; 
 IPython.Shell.IPShell().mainloop()'"
-alias bpython=python -m bpython.cli
+alias bpython="python -m bpython.cli"
