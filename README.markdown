@@ -59,8 +59,7 @@ From this top-level directory.
 
     pip install numpy matplotlib
 
-#### [zsh](http://www.zsh.org/) with
-     [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+#### [zsh](http://www.zsh.org/) with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
      
     brew install zsh
 
@@ -69,6 +68,9 @@ From this top-level directory.
     chsh -s /bin/zsh
 
 #### emacs
+
+checkout my [emacs kicker](https://github.com/sebastibe/emacs-kicker)
+for a good a start.
 
 ## Other goodies
 
