@@ -1,0 +1,8 @@
+[ui]
+username=Sébastien Béal <sebastibe@gmail.com>
+verbose = True
+editor = emacs
+merge = emacs
+ssh = ssh -C
+
+[extensions]

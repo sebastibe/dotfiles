@@ -1,0 +1,2 @@
+# path for node.js and homebrew
+export PATH=$PATH:/opt/node/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin
