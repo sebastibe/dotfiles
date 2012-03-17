@@ -75,3 +75,4 @@ for a good a start.
 ## Other goodies
 
 * [iTerm2](www.iterm2.com)
+* [GitHub for Mac](http://mac.github.com/)
