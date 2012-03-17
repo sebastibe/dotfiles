@@ -27,47 +27,48 @@ From this top-level directory.
 
     /usr/bin/ruby -e "$(/usr/bin/curl -fksSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
 
-* the following utilities
+### the following utilities
 
-UNIX tools
+#### UNIX tools
 
     brew install wget 
 
-versionning tools
+#### versionning tools
 
     brew install git bazaar mercurial
 
-language
+#### language
 
     brew install python
 
-libraries
+#### libraries
 
     brew install libevent jpeg
 
-Editor
+#### editor
 
     brew install emacs
 
-* pip 
+#### pip 
 
     easy_install pip
 
     pip install virtualenv virtualenvwrapper ipython bpython pep8 PIL
 
-Scientific tools
+#### Python scientific toolset
 
     pip install numpy matplotlib
 
-* [zsh](http://www.zsh.org/) with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-
+#### [zsh](http://www.zsh.org/) with
+     [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+     
     brew install zsh
 
     git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
     chsh -s /bin/zsh
 
-* emacs
+#### emacs
 
 ## Other goodies
 
