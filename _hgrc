@@ -6,3 +6,4 @@ merge = emacs
 ssh = ssh -C
 
 [extensions]
+prompt = ~/Dropbox/Dev/scripts/hg-prompt/prompt.py
