@@ -16,12 +16,16 @@ export ZSH_THEME="prose"
 # Uncomment following line if you want to disable autosetting terminal title.
 # export DISABLE_AUTO_TITLE="true"
 
-plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
+# virtualenv wrapper
+export WORKON_HOME=~/Dev
+source /usr/local/bin/virtualenvwrapper.sh
 
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$PATH"
 
 alias ipython="python -c 'import IPython; 
 IPython.Shell.IPShell().mainloop()'"
 alias bpython="python -m bpython.cli"
+
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
