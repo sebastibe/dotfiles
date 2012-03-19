@@ -1,5 +1,8 @@
+# Path to development folder
+export DEV=$HOME/Dev
+
 # Path to your oh-my-zsh configuration.
-export ZSH=$HOME/Documents/Dev/oh-my-zsh
+export ZSH=$DEV/oh-my-zsh
 
 # Set name of the theme to load.
 export ZSH_THEME="prose"
@@ -17,7 +20,7 @@ export ZSH_THEME="prose"
 # export DISABLE_AUTO_TITLE="true"
 
 # virtualenv wrapper
-export WORKON_HOME=~/Dev
+export WORKON_HOME=$DEV
 source /usr/local/bin/virtualenvwrapper.sh
 
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$PATH"
