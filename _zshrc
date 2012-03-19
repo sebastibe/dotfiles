@@ -26,6 +26,6 @@ alias ipython="python -c 'import IPython;
 IPython.Shell.IPShell().mainloop()'"
 alias bpython="python -m bpython.cli"
 
-plugins=(git)
+plugins=(git brew fabric django pip osx)
 
 source $ZSH/oh-my-zsh.sh
