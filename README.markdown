@@ -1,5 +1,6 @@
 ## Instructions
 ### Creating source files
+
 Any file which matches the shell glob `_*` will be linked into `$HOME` as a symlink with the first `_`  replaced with a `.`
 
 For example:
@@ -11,6 +12,7 @@ becomes
     ${HOME}/.bashrc
 
 ### Installing source files
+
 It's as simple as running:
 
     ./install.sh
@@ -29,7 +31,7 @@ From this top-level directory.
 
 #### UNIX tools
 
-    brew install wget 
+    brew install wget nmap
 
 #### Versionning tools
 
@@ -59,9 +61,21 @@ A good start can be found in my [emacs kicker](https://github.com/sebastibe/emac
 
     git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
+Change your default terminal with
+
     chsh -s /bin/zsh
+
+Or directly in iTerm preferences.
 
 ### Other goodies
 
-* [iTerm2](www.iterm2.com)
+* [iTerm2](www.iterm2.com) alternative to Term
 * [GitHub for Mac](http://mac.github.com/)
+* [iStumber](http://www.istumbler.net/) Mac Network discovery tool
+
+And others also availables through the App store:
+
+* [XCode](https://developer.apple.com/xcode/) is almost more and more mandatory...
+* [Moom](http://manytricks.com/moom/) for better Mac OS X Windows organization 
+* [GeekTool](http://projects.tynsoe.org/en/geektool/) enable to overlay information on the screen background 
+* [Omnigraffle](http://www.omnigroup.com/products/omnigraffle/) is the best alternative to Vision for Mac. Expensive though. Exist for iPad too.
