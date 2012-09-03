@@ -17,47 +17,41 @@ It's as simple as running:
 
 From this top-level directory.
 
-## Requirements
-
-* bash
-
 ## Recommended tools (Mac OS X)
+
+### Package manager
 
 * [Homebrew](http://mxcl.github.com/homebrew/)
 
     /usr/bin/ruby -e "$(/usr/bin/curl -fksSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
 
-### the following utilities
+### Utilities
 
 #### UNIX tools
 
     brew install wget 
 
-#### versionning tools
+#### Versionning tools
 
     brew install git bazaar mercurial
 
-#### language
+#### Python
 
-    brew install python
+    easy_install virtualenv virtualenvwrapper readline
 
-#### libraries
+    pip install ipython bpython pep8 PIL numpy matplotlib
+	
+and then work in your virtual environments.
+
+#### Libraries
 
     brew install libevent jpeg
 
-#### editor
+#### Text editor
 
-    brew install emacs
+Install the latest stable [Emacs](http://www.gnu.org/software/emacs/) version from http://emacsformacosx.com/
 
-#### pip 
-
-    easy_install pip
-
-    pip install virtualenv virtualenvwrapper ipython bpython pep8 PIL
-
-#### Python scientific toolset
-
-    pip install numpy matplotlib
+A good start can be found in my [emacs kicker](https://github.com/sebastibe/emacs-kicker) repository.
 
 #### [zsh](http://www.zsh.org/) with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
      
@@ -67,12 +61,7 @@ From this top-level directory.
 
     chsh -s /bin/zsh
 
-#### emacs
-
-checkout my [emacs kicker](https://github.com/sebastibe/emacs-kicker)
-for a good a start.
-
-## Other goodies
+### Other goodies
 
 * [iTerm2](www.iterm2.com)
 * [GitHub for Mac](http://mac.github.com/)
