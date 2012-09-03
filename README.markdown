@@ -47,7 +47,7 @@ and then work in your virtual environments.
 
 #### Libraries
 
-    brew install libevent jpeg
+    brew install libevent jpeg gettext zeromq
 
 #### Text editor
 
