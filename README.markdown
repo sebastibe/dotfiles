@@ -45,6 +45,10 @@ From this top-level directory.
 	
 and then work in your virtual environments.
 
+For further integration with emacs, ropemacs is highly recommanded:
+
+	pip install rope ropemacs ropemode
+
 #### Libraries
 
     brew install libevent jpeg gettext zeromq
