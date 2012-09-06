@@ -1,0 +1,5 @@
+#!/bin/bash
+# This hook is run after a new virtualenv is activated.
+# create a /src folder in the virtualenv
+proj_name=$(echo $VIRTUAL_ENV|awk -F'/' '{print $NF}')
+mkdir $DEV/$proj_name/src

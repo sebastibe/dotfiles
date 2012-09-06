@@ -1,5 +1,6 @@
 ## Instructions
 ### Creating source files
+
 Any file which matches the shell glob `_*` will be linked into `$HOME` as a symlink with the first `_`  replaced with a `.`
 
 For example:
@@ -11,53 +12,52 @@ becomes
     ${HOME}/.bashrc
 
 ### Installing source files
+
 It's as simple as running:
 
     ./install.sh
 
 From this top-level directory.
 
-## Requirements
-
-* bash
-
 ## Recommended tools (Mac OS X)
+
+### Package manager
 
 * [Homebrew](http://mxcl.github.com/homebrew/)
 
     /usr/bin/ruby -e "$(/usr/bin/curl -fksSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
 
-### the following utilities
+### Utilities
 
 #### UNIX tools
 
-    brew install wget 
+    brew install wget nmap
 
-#### versionning tools
+#### Versionning tools
 
     brew install git bazaar mercurial
 
-#### language
+#### Python
 
-    brew install python
+    easy_install virtualenv virtualenvwrapper readline
 
-#### libraries
+    pip install ipython bpython pep8 PIL numpy matplotlib
+	
+and then work in your virtual environments.
 
-    brew install libevent jpeg
+For further integration with emacs, ropemacs is highly recommanded:
 
-#### editor
+	pip install rope ropemacs ropemode
 
-    brew install emacs
+#### Libraries
 
-#### pip 
+    brew install libevent jpeg gettext zeromq
 
-    easy_install pip
+#### Text editor
 
-    pip install virtualenv virtualenvwrapper ipython bpython pep8 PIL
+Install the latest stable [Emacs](http://www.gnu.org/software/emacs/) version from http://emacsformacosx.com/
 
-#### Python scientific toolset
-
-    pip install numpy matplotlib
+A good start can be found in my [emacs kicker](https://github.com/sebastibe/emacs-kicker) repository.
 
 #### [zsh](http://www.zsh.org/) with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
      
@@ -65,14 +65,21 @@ From this top-level directory.
 
     git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
+Change your default terminal with
+
     chsh -s /bin/zsh
 
-#### emacs
+Or directly in iTerm preferences.
 
-checkout my [emacs kicker](https://github.com/sebastibe/emacs-kicker)
-for a good a start.
+### Other goodies
 
-## Other goodies
-
-* [iTerm2](www.iterm2.com)
+* [iTerm2](www.iterm2.com) alternative to Term
 * [GitHub for Mac](http://mac.github.com/)
+* [iStumber](http://www.istumbler.net/) Mac Network discovery tool
+
+And others also availables through the App store:
+
+* [XCode](https://developer.apple.com/xcode/) is almost more and more mandatory...
+* [Moom](http://manytricks.com/moom/) for better Mac OS X Windows organization 
+* [GeekTool](http://projects.tynsoe.org/en/geektool/) enable to overlay information on the screen background 
+* [Omnigraffle](http://www.omnigroup.com/products/omnigraffle/) is the best alternative to Vision for Mac. Expensive though. Exist for iPad too.
