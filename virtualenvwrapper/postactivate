@@ -7,7 +7,12 @@ RPROMPT="%{${fg_bold[white]}%}(env: %{${fg[green]}%}`basename \"$VIRTUAL_ENV\"`%
 cd () {
     if (( $# == 0 ))
     then
-        builtin cd $VIRTUAL_ENV
+	if (( $# == 0 ))
+	then
+            builtin cd $VIRTUAL_ENV/src
+	else
+	    builtin cd $VIRTUAL_ENV
+	fi
     else
         builtin cd "$@"
     fi
