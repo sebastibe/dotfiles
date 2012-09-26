@@ -83,3 +83,4 @@ And others also availables through the App store:
 * [Moom](http://manytricks.com/moom/) for better Mac OS X Windows organization 
 * [GeekTool](http://projects.tynsoe.org/en/geektool/) enable to overlay information on the screen background 
 * [Omnigraffle](http://www.omnigroup.com/products/omnigraffle/) is the best alternative to Vision for Mac. Expensive though. Exist for iPad too.
+* [XQuartz](http://xquartz.macosforge.org/) X.Org Windows system for OS X (needed for gnuplot)
