@@ -2,7 +2,7 @@
 username=Sebastien Beal <sebastibe@gmail.com>
 verbose = True
 editor = emacs
-merge = emacs
+merge = emacsclient -n
 ssh = ssh -C
 
 [extensions]

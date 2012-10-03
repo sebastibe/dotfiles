@@ -32,6 +32,7 @@ export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/shar
 alias ipython="python -c 'import IPython; 
 IPython.Shell.IPShell().mainloop()'"
 alias bpython="python -m bpython.cli"
+alias em='emacsclient -n'
 
 plugins=(git brew fabric django pip osx)
 
