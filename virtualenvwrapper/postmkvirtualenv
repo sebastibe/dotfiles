@@ -3,3 +3,5 @@
 # create a /src folder in the virtualenv
 proj_name=$(echo $VIRTUAL_ENV|awk -F'/' '{print $NF}')
 mkdir $DEV/$proj_name/src
+mkdir -p $DEV/$proj_name/var/log
+mkdir -p $DEV/$proj_name/var/run
