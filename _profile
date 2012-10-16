@@ -16,3 +16,9 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+# update environment.plist
+if [ -x /usr/libexec/path_helper ]; then
+        eval `/usr/libexec/path_helper -s`
+        defaults write $HOME/.MacOSX/environment PATH "$PATH"
+fi
