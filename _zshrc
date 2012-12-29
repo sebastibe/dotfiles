@@ -25,6 +25,9 @@ export ZSH_THEME="prose"
 
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$PATH"
 
+# configuration for postgres
+export PGHOST=/tmp
+
 # virtualenv wrapper
 export WORKON_HOME=$DEV
 source /usr/local/bin/virtualenvwrapper.sh
@@ -34,6 +37,6 @@ IPython.Shell.IPShell().mainloop()'"
 alias bpython="python -m bpython.cli"
 alias em='emacsclient -n'
 
-plugins=(git brew fabric django pip osx)
+plugins=(git brew fabric django pip osx vagrant python gem supervisor)
 
 source $ZSH/oh-my-zsh.sh
