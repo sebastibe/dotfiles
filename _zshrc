@@ -37,6 +37,6 @@ IPython.Shell.IPShell().mainloop()'"
 alias bpython="python -m bpython.cli"
 alias em='emacsclient -n'
 
-plugins=(git brew fabric django pip osx vagrant python gem supervisor)
+plugins=(git brew fabric django pip osx vagrant python gem supervisor screen)
 
 source $ZSH/oh-my-zsh.sh
