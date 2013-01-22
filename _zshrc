@@ -32,8 +32,6 @@ export PGHOST=/tmp
 export WORKON_HOME=$DEV
 source /usr/local/bin/virtualenvwrapper.sh
 
-alias ipython="python -c 'import IPython; 
-IPython.Shell.IPShell().mainloop()'"
 alias bpython="python -m bpython.cli"
 alias em='emacsclient -n'
 
