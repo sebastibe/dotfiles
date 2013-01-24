@@ -31,11 +31,29 @@ From this top-level directory.
 
 #### UNIX tools
 
-    brew install wget nmap
+    brew install wget nmap htop-osx mobile-shell automake glib
 
 #### Versionning tools
 
     brew install git bazaar mercurial
+
+#### Libraries
+
+For image processing and plotting:
+
+    brew install jpeg libpng libffi giflib boost protobuf lzlib grapviz gnuplot
+
+For text processing:
+
+    brew install gettext readline aspell xapian markdown
+
+For evented architecture:
+
+    brew install libevent zeromq freetype freexl fontconfig
+
+#### Databases
+
+    brew install sqlite redis postgresql cassandra hdf5
 
 #### Python
 
@@ -49,9 +67,9 @@ For further integration with emacs, ropemacs is highly recommanded:
 
 	pip install rope ropemacs ropemode
 
-#### Libraries
+#### Clojure
 
-    brew install libevent jpeg gettext zeromq
+    brew install clojure leiningen
 
 #### Text editor
 
