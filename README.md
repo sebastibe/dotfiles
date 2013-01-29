@@ -31,7 +31,11 @@ From this top-level directory.
 
 #### UNIX tools
 
-    brew install wget nmap htop-osx mobile-shell automake glib
+    brew install wget nmap htop-osx mobile-shell automake glib bash tree
+
+Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+
+    brew install findutils
 
 #### Versionning tools
 
