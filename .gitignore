@@ -1,7 +1,58 @@
-*logs*
+*.db
+*.swo
+
+# web assets generated directory
+gen/
+.webassets-cache/
+.DS_Store
+
+# Ignore built docs..
+docs/build
+docs/html
+
+# Python
+*.py[co]
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+_build
+eggs
+parts
+bin
+develop-eggs
+.installed.cfg
+
+# Installer logs
+pip-log.txt
+logs
 *.log
-*~
+*.pid
+
+# Unit test / coverage reports
+.coverage
+.tox
+
+# Vim
+*.swp
+.rope*
+
+# Emacs
 *\#
 .\#*
-*.pyc
 *.elc
+
+# backup files
+*.bak
+
+# Tags for git-helpers
+tags
+
+# Vagrant
+.vagrant
+
+
+
+

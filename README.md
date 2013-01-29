@@ -35,7 +35,7 @@ From this top-level directory.
 
 #### Versionning tools
 
-    brew install git bazaar mercurial
+    brew install git legit bazaar mercurial svn
 
 #### Libraries
 
