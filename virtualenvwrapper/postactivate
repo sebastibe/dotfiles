@@ -4,6 +4,10 @@ PS1="$_OLD_VIRTUAL_PS1"
 _OLD_RPROMPT="$RPROMPT"
 RPROMPT="%{${fg_bold[white]}%}(env: %{${fg[green]}%}`basename \"$VIRTUAL_ENV\"`%{${fg_bold[white]}%})%{${reset_color}%} $RPROMPT"
 
+# don't get caught off-guard
+proj_name=$(echo $VIRTUAL_ENV|awk -F'/' '{print $NF}')
+mkdir -p $DEV/$proj_name/src
+
 cd () {
     if (( $# == 0 ))
     then
