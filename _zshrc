@@ -35,6 +35,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 alias bpython="python -m bpython.cli"
 alias em='emacsclient -n'
 
-plugins=(git brew fabric django pip osx vagrant python gem supervisor screen node npm)
+plugins=(git brew fabric django pip osx vagrant python gem supervisor screen node npm virtualenvwrapper bower)
 
 source $ZSH/oh-my-zsh.sh

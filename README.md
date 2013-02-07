@@ -49,11 +49,11 @@ For image processing and plotting:
 
 For text processing:
 
-    brew install gettext readline aspell xapian markdown
+    brew install gettext readline aspell xapian markdown w3m
 
 For evented architecture:
 
-    brew install libevent zeromq freetype freexl fontconfig
+    brew install libevent libuv zeromq freetype freexl fontconfig
 
 #### Databases
 
@@ -74,6 +74,14 @@ For further integration with emacs, ropemacs is highly recommanded:
 #### Clojure
 
     brew install clojure leiningen
+
+### Javascript
+
+    brew install node
+    
+Some node goodies:
+    
+    node install -g brunch bower
 
 #### Text editor
 
