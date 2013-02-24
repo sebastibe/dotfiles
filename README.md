@@ -45,7 +45,7 @@ Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 
 For image processing and plotting:
 
-    brew install jpeg libpng libffi giflib boost protobuf lzlib grapviz gnuplot
+    brew install jpeg libpng libffi giflib boost protobuf lzlib grapviz gnuplot libsvg svg2png svg2pdf
 
 For text processing:
 
