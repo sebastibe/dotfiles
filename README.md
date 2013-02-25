@@ -87,7 +87,12 @@ Some node goodies:
 
 Install the latest stable [Emacs](http://www.gnu.org/software/emacs/) version from http://emacsformacosx.com/
 
-A good start can be found in my [emacs kicker](https://github.com/sebastibe/emacs-kicker) repository.
+A good OS X port by @railwaycat can be found there: [emacs-mac-port](https://github.com/railwaycat/emacs-mac-port)
+and can be easilly installed with brew:
+
+    brew install --HEAD https://raw.github.com/railwaycat/emacs-mac-port/master/emacs-mac.rb
+
+A good start can be found in my [dotemacs](https://github.com/sebastibe/dotemacs) repository.
 
 #### [zsh](http://www.zsh.org/) with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
      
