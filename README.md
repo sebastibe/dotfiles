@@ -56,6 +56,10 @@ For evented architecture:
 
     brew install libevent libuv zeromq freetype freexl fontconfig
 
+For encryption:
+
+    brew install gpg
+
 #### Databases
 
     brew install sqlite redis postgresql cassandra hdf5
