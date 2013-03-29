@@ -80,7 +80,15 @@ For further integration with emacs, ropemacs is highly recommanded:
 
     brew install clojure leiningen
 
-### Javascript
+#### Go
+
+    brew install go
+    
+#### Rust
+
+    brew install rust
+
+### JavaScript server
 
     brew install node
     
