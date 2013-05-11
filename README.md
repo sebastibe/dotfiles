@@ -111,7 +111,11 @@ A good start can be found in my [dotemacs](https://github.com/sebastibe/dotemacs
      
     brew install zsh
 
-    git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+    git clone git://github.com/sebastibe/oh-my-zsh.git ~/.oh-my-zsh
+
+And add zsh-syntax-highlighting in `~/.oh-my-zsh/custom/plugins`:
+
+    git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
 
 Change your default terminal with
 
