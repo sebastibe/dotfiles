@@ -31,7 +31,7 @@ From this top-level directory.
 
 #### UNIX tools
 
-    brew install wget nmap htop-osx mobile-shell automake glib bash tree
+    brew install wget nmap htop-osx mobile-shell automake glib bash tree ifstat
 
 Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 
@@ -54,7 +54,7 @@ For text processing:
 
 For evented architecture:
 
-    brew install libevent libuv zeromq freetype freexl fontconfig
+    brew install libevent libuv zeromq freetype freexl fontconfig fontforge
 
 For encryption:
 
@@ -68,8 +68,10 @@ For encryption:
 
     easy_install virtualenv virtualenvwrapper readline
 
-    pip install ipython bpython pep8 PIL numpy matplotlib
-	
+    pip install ipython bpython pep8 PIL numpy matplotlib psutil
+
+    pip install --user git+git://github.com/Lokaltog/powerline
+
 and then work in your virtual environments.
 
 For further integration with emacs, ropemacs is highly recommanded:

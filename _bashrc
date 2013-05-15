@@ -1,4 +1,6 @@
 # path for node.js and homebrew
-export PATH=$PATH:/opt/node/bin:/usr/local/sbin:/usr/local/share/npm/bin
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$HOME/Library/Python/2.7/bin:$PATH"
+
+. ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/bash/powerline.sh
 
 alias bpython="python -m bpython.cli"

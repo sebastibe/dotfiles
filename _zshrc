@@ -10,8 +10,18 @@ export DEPLOY_USER="seb"
 # Path to your oh-my-zsh configuration.
 export ZSH=$DEV/oh-my-zsh
 
-# Set name of the theme to load.
-export ZSH_THEME="prose"
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$HOME/Library/Python/2.7/bin:$PATH"
+
+# Powerline setup
+export DEFAULT_USER="seb"
+export POWERLINE_HIDE_HOST_NAME="true"
+export POWERLINE_DETECT_SSH="true"
+export TERM="xterm-256color"
+
+# Require powerline: pip install --user git+git://github.com/Lokaltog/powerline
+. ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
+
+export ZSH_THEME="powerline"  # prose, agnoster are also good
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -24,8 +34,6 @@ export ZSH_THEME="prose"
 
 # Uncomment following line if you want to disable autosetting terminal title.
 # export DISABLE_AUTO_TITLE="true"
-
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$PATH"
 
 # configuration for postgres
 export PGHOST=/tmp
