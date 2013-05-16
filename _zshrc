@@ -12,16 +12,7 @@ export ZSH=$DEV/oh-my-zsh
 
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$HOME/Library/Python/2.7/bin:$PATH"
 
-# Powerline setup
-export DEFAULT_USER="seb"
-export POWERLINE_HIDE_HOST_NAME="true"
-export POWERLINE_DETECT_SSH="true"
-export TERM="xterm-256color"
-
-# Require powerline: pip install --user git+git://github.com/Lokaltog/powerline
-. ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
-
-export ZSH_THEME="powerline"  # prose, agnoster are also good
+#export ZSH_THEME="powerline"  # prose, agnoster are also good
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -35,10 +26,11 @@ export ZSH_THEME="powerline"  # prose, agnoster are also good
 # Uncomment following line if you want to disable autosetting terminal title.
 # export DISABLE_AUTO_TITLE="true"
 
-# configuration for postgres
+# Configuration for postgres
 export PGHOST=/tmp
 
-# virtualenv wrapper
+# Virtualenv wrapper
+export VIRTUALENVWRAPPER_LOG_DIR="logs"
 export WORKON_HOME=$DEV
 source /usr/local/bin/virtualenvwrapper.sh
 
@@ -49,3 +41,15 @@ alias em='emacsclient -n'
 plugins=(git brew fabric django pip osx vagrant python gem supervisor screen node npm virtualenvwrapper bower clipboard zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
+
+# Powerline setup
+export DEFAULT_USER="seb"
+export POWERLINE_HIDE_HOST_NAME="true"
+export POWERLINE_DETECT_SSH="true"
+export TERM="xterm-256color"
+
+# Env name is already displayed in powerline
+export VIRTUAL_ENV_DISABLE_PROMPT="true"
+
+# Require powerline: pip install --user git+git://github.com/Lokaltog/powerline
+source ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
