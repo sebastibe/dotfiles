@@ -58,7 +58,7 @@ For evented architecture:
 
 For encryption:
 
-    brew install gpg
+    brew install gpg openssl
 
 #### Databases
 
@@ -76,7 +76,7 @@ and then work in your virtual environments.
 
 For further integration with emacs, ropemacs is highly recommanded:
 
-	pip install rope ropemacs ropemode
+    pip install rope ropemacs ropemode
 
 #### Clojure
 
@@ -85,7 +85,13 @@ For further integration with emacs, ropemacs is highly recommanded:
 #### Go
 
     brew install go
-    
+
+#### Ruby
+
+    brew install libyaml libxml2 libxslt libksba
+
+    curl -L https://get.rvm.io | bash -s stable --ruby
+
 #### Rust
 
     brew install rust
@@ -93,9 +99,9 @@ For further integration with emacs, ropemacs is highly recommanded:
 ### JavaScript server
 
     brew install node
-    
+
 Some node goodies:
-    
+
     node install -g brunch bower
 
 #### Text editor
@@ -110,7 +116,7 @@ and can be easilly installed with brew:
 A good start can be found in my [dotemacs](https://github.com/sebastibe/dotemacs) repository.
 
 #### [zsh](http://www.zsh.org/) with [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-     
+
     brew install zsh
 
     git clone git://github.com/sebastibe/oh-my-zsh.git ~/.oh-my-zsh
@@ -134,8 +140,8 @@ Or directly in iTerm preferences.
 And others also availables through the App store:
 
 * [XCode](https://developer.apple.com/xcode/) is almost more and more mandatory...
-* [Moom](http://manytricks.com/moom/) for better Mac OS X Windows organization 
-* [GeekTool](http://projects.tynsoe.org/en/geektool/) enable to overlay information on the screen background 
+* [Moom](http://manytricks.com/moom/) for better Mac OS X Windows organization
+* [GeekTool](http://projects.tynsoe.org/en/geektool/) enable to overlay information on the screen background
 * [Omnigraffle](http://www.omnigroup.com/products/omnigraffle/) is the best alternative to Vision for Mac. Expensive though. Exist for iPad too.
 * [XQuartz](http://xquartz.macosforge.org/) X.Org Windows system for OS X (needed for gnuplot)
 * [Android File Transfer](http://www.android.com/filetransfer/) Utility to tranfer files to an Android device

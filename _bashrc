@@ -4,3 +4,5 @@ export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/shar
 . ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/bash/powerline.sh
 
 alias bpython="python -m bpython.cli"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
