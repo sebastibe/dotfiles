@@ -68,7 +68,7 @@ For encryption:
 
     easy_install virtualenv virtualenvwrapper readline
 
-    pip install ipython bpython pep8 PIL numpy matplotlib psutil
+    pip install ipython bpython pep8 PIL numpy matplotlib psutil pyflakes
 
     pip install --user git+git://github.com/Lokaltog/powerline
 
@@ -76,7 +76,7 @@ and then work in your virtual environments.
 
 For further integration with emacs, ropemacs is highly recommanded:
 
-    pip install rope ropemacs ropemode
+    pip install rope ropemacs ropemode elpy
 
 #### Clojure
 
