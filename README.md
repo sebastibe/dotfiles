@@ -136,6 +136,8 @@ Or directly in iTerm preferences.
 * [iTerm2](www.iterm2.com) alternative to Term
 * [GitHub for Mac](http://mac.github.com/)
 * [iStumber](http://www.istumbler.net/) Mac Network discovery tool
+* [WaterRoof](http://www.hanynet.com/waterroof/) Firewall editor
+* [keyremap4macbook](https://pqrs.org/macosx/keyremap4macbook/) to remap your keyboard
 
 And others also availables through the App store:
 
