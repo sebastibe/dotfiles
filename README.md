@@ -137,7 +137,8 @@ Or directly in iTerm preferences.
 * [GitHub for Mac](http://mac.github.com/)
 * [iStumber](http://www.istumbler.net/) Mac Network discovery tool
 * [WaterRoof](http://www.hanynet.com/waterroof/) Firewall editor
-* [keyremap4macbook](https://pqrs.org/macosx/keyremap4macbook/) to remap your keyboard
+* [keyremap4macbook](https://pqrs.org/macosx/keyremap4macbook/) Remap your keyboard
+* [slate](https://github.com/jigish/slate) Window management
 
 And others also availables through the App store:
 
