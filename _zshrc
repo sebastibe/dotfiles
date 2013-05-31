@@ -3,6 +3,10 @@
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+alias em="emacsclient -n"
+export EDITOR="em"
+export SHELL="/bin/zsh"
+
 # Path to development folder
 export DEV=$HOME/Dev
 export DEPLOY_USER="seb"
@@ -35,7 +39,6 @@ export WORKON_HOME=$DEV
 source /usr/local/bin/virtualenvwrapper.sh
 
 alias bpython="python -m bpython.cli"
-alias em='emacsclient -n'
 
 # check https://github.com/zsh-users/zsh-syntax-highlighting
 plugins=(git brew fabric django pip osx vagrant python gem supervisor screen\
@@ -59,3 +62,5 @@ source ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powe
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export rvm_path=$HOME/.rvm
 source $rvm_path/scripts/rvm
+
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator

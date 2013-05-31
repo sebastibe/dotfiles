@@ -29,6 +29,16 @@ From this top-level directory.
 
 ### Utilities
 
+#### Terminal multiplexer
+
+    brew install tmux
+
+A good addon to create and manage tmux sessions easily: [tmuxinator](https://github.com/aziz/tmuxinator)
+
+    gem install tmuxinator
+
+_Note:_ Install [RVM](#ruby) before.
+
 #### UNIX tools
 
     brew install wget nmap htop-osx mobile-shell automake glib bash tree ifstat
@@ -90,7 +100,11 @@ For further integration with emacs, ropemacs is highly recommanded:
 
     brew install libyaml libxml2 libxslt libksba
 
+**RVM** is a command-line tool which allows you to easily install, manage, and work with multiple ruby environments from interpreters to sets of gems:
+
     curl -L https://get.rvm.io | bash -s stable --ruby
+
+An **RVM** cheatsheet can be found [here](http://cheat.errtheblog.com/s/rvm).
 
 #### Rust
 
@@ -143,7 +157,7 @@ Or directly in iTerm preferences.
 And others also availables through the App store:
 
 * [XCode](https://developer.apple.com/xcode/) is almost more and more mandatory...
-* [Moom](http://manytricks.com/moom/) for better Mac OS X Windows organization
+* [Moom](http://manytricks.com/moom/) for better Mac OS X Windows organization (paid)
 * [GeekTool](http://projects.tynsoe.org/en/geektool/) enable to overlay information on the screen background
 * [Omnigraffle](http://www.omnigroup.com/products/omnigraffle/) is the best alternative to Vision for Mac. Expensive though. Exist for iPad too.
 * [XQuartz](http://xquartz.macosforge.org/) X.Org Windows system for OS X (needed for gnuplot)
