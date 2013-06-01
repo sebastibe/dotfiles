@@ -51,6 +51,12 @@ Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 
     brew install git legit bazaar mercurial svn
 
+[Hg-Git](http://hg-git.github.io/) is a plugin for Mercurial, adding the ability to push to and pull from a Git server repository from Mercurial:
+
+    easy_install hg-git
+
+And add the extension to your `~/.hgrc`.
+
 #### Libraries
 
 For image processing and plotting:
