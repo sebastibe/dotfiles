@@ -82,6 +82,13 @@ For encryption:
 
 #### Python
 
+To manage different Python versions at the user level, one way to go is to use
+[pythonbrew](https://github.com/utahta/pythonbrew):
+
+    curl -kL http://xrl.us/pythonbrewinstall | bash
+
+You can then work in a *virtualenv* using your favorite Python version.
+
     easy_install virtualenv virtualenvwrapper readline
 
     pip install ipython bpython pep8 PIL numpy matplotlib psutil pyflakes
@@ -90,7 +97,7 @@ For encryption:
 
 and then work in your virtual environments.
 
-For further integration with emacs, ropemacs is highly recommanded:
+For further integration with emacs, ropemacs is highly recommended:
 
     pip install rope ropemacs ropemode elpy
 
