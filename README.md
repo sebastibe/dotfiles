@@ -41,7 +41,7 @@ _Note:_ Install [RVM](#ruby) before.
 
 #### UNIX tools
 
-    brew install wget nmap htop-osx mobile-shell automake glib bash tree ifstat
+    brew install wget nmap htop-osx mobile-shell automake glib bash tree ifstat tcpdump
 
 Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 
@@ -157,6 +157,11 @@ Change your default terminal with
     chsh -s /bin/zsh
 
 Or directly in iTerm preferences.
+
+#### LaTeX
+
+* [MacTex](http://www.tug.org/mactex/)
+* PDF reader and note-taker (interacting with LaTeX) [Skim](http://skim-app.sourceforge.net/)
 
 ### Other goodies
 
