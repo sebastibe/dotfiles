@@ -91,6 +91,8 @@ You can then work in a *virtualenv* using your favorite Python version.
 
     easy_install virtualenv virtualenvwrapper readline
 
+    pip install --upgrade pip distribute
+
     pip install ipython bpython pep8 PIL numpy matplotlib psutil pyflakes
 
     pip install --user git+git://github.com/Lokaltog/powerline
