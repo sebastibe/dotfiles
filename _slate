@@ -1,0 +1,15 @@
+alias editor 'Emacs'
+alias browser 'Google Chrome'
+alias terminal 'iTerm'
+alias message 'Messages'
+alias omnigraffle 'OmniGraffle Professional'
+alias evernote 'Evernote'
+alias airmail 'Airmail'
+
+bind u:ctrl;shift focus ${editor}
+bind b:ctrl;shift focus ${browser}
+bind t:ctrl;shift focus ${terminal}
+bind m:ctrl;shift focus ${message}
+bind o:ctrl;shift focus ${omnigraffle}
+bind e:ctrl;shift focus ${evernote}
+bind a:ctrl;shift focus ${airmail}
