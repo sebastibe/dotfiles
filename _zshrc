@@ -43,7 +43,7 @@ alias bpython="python -m bpython.cli"
 # check https://github.com/zsh-users/zsh-syntax-highlighting
 plugins=(git brew fabric django pip osx vagrant python gem supervisor screen\
  node npm virtualenv virtualenvwrapper bower clipboard zsh-syntax-highlighting\
- rvm autojump tmuxinator postgres redis-cli)
+ rvm autojump tmuxinator postgres redis-cli celery)
 
 source $ZSH/oh-my-zsh.sh
 
