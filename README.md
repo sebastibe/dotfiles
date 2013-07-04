@@ -1,7 +1,8 @@
 ## Instructions
 ### Creating source files
 
-Any file which matches the shell glob `_*` will be linked into `$HOME` as a symlink with the first `_`  replaced with a `.`
+Any file which matches the shell glob `_*` will be linked into `$HOME`
+as a symlink with the first `_` replaced with a `.`
 
 For example:
 
@@ -49,9 +50,11 @@ Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 
 #### Versionning tools
 
-    brew install git legit bazaar mercurial svn
+    brew install git git-crypt legit bazaar mercurial svn
 
-[Hg-Git](http://hg-git.github.io/) is a plugin for Mercurial, adding the ability to push to and pull from a Git server repository from Mercurial:
+[Hg-Git](http://hg-git.github.io/) is a plugin for Mercurial, adding
+the ability to push to and pull from a Git server repository from
+Mercurial:
 
     easy_install hg-git
 
@@ -115,7 +118,9 @@ For further integration with emacs, ropemacs is highly recommended:
 
     brew install libyaml libxml2 libxslt libksba
 
-**RVM** is a command-line tool which allows you to easily install, manage, and work with multiple ruby environments from interpreters to sets of gems:
+**RVM** is a command-line tool which allows you to easily install,
+  manage, and work with multiple ruby environments from interpreters
+  to sets of gems:
 
     curl -L https://get.rvm.io | bash -s stable --ruby
 
@@ -135,10 +140,12 @@ Some node goodies:
 
 #### Text editor
 
-Install the latest stable [Emacs](http://www.gnu.org/software/emacs/) version from http://emacsformacosx.com/
+Install the latest stable [Emacs](http://www.gnu.org/software/emacs/)
+version from http://emacsformacosx.com/
 
-A good OS X port by @railwaycat can be found there: [emacs-mac-port](https://github.com/railwaycat/emacs-mac-port)
-and can be easilly installed with brew:
+A good OS X port by @railwaycat can be found there:
+[emacs-mac-port](https://github.com/railwaycat/emacs-mac-port) and can
+be easilly installed with brew:
 
     brew install --HEAD https://raw.github.com/railwaycat/emacs-mac-port/master/emacs-mac.rb
 
@@ -163,7 +170,8 @@ Or directly in iTerm preferences.
 #### LaTeX
 
 * [MacTex](http://www.tug.org/mactex/)
-* PDF reader and note-taker (interacting with LaTeX) [Skim](http://skim-app.sourceforge.net/)
+* PDF reader and note-taker (interacting with LaTeX)
+  [Skim](http://skim-app.sourceforge.net/)
 
 ### Other goodies
 
@@ -171,14 +179,22 @@ Or directly in iTerm preferences.
 * [GitHub for Mac](http://mac.github.com/)
 * [iStumber](http://www.istumbler.net/) Mac Network discovery tool
 * [WaterRoof](http://www.hanynet.com/waterroof/) Firewall editor
-* [keyremap4macbook](https://pqrs.org/macosx/keyremap4macbook/) Remap your keyboard
+* [keyremap4macbook](https://pqrs.org/macosx/keyremap4macbook/) Remap
+  your keyboard
 * [slate](https://github.com/jigish/slate) Window management
 
 And others also availables through the App store:
 
-* [XCode](https://developer.apple.com/xcode/) is almost more and more mandatory...
-* [Moom](http://manytricks.com/moom/) for better Mac OS X Windows organization (paid)
-* [GeekTool](http://projects.tynsoe.org/en/geektool/) enable to overlay information on the screen background
-* [Omnigraffle](http://www.omnigroup.com/products/omnigraffle/) is the best alternative to Vision for Mac. Expensive though. Exist for iPad too.
-* [XQuartz](http://xquartz.macosforge.org/) X.Org Windows system for OS X (needed for gnuplot)
-* [Android File Transfer](http://www.android.com/filetransfer/) Utility to tranfer files to an Android device
+* [XCode](https://developer.apple.com/xcode/) is almost more and more
+  mandatory...
+* [Moom](http://manytricks.com/moom/) for better Mac OS X Windows
+  organization (paid)
+* [GeekTool](http://projects.tynsoe.org/en/geektool/) enable to
+  overlay information on the screen background
+* [Omnigraffle](http://www.omnigroup.com/products/omnigraffle/) is the
+  best alternative to Vision for Mac. Expensive though. Exist for iPad
+  too.
+* [XQuartz](http://xquartz.macosforge.org/) X.Org Windows system for
+  OS X (needed for gnuplot)
+* [Android File Transfer](http://www.android.com/filetransfer/)
+  Utility to tranfer files to an Android device
