@@ -7,6 +7,7 @@ RPROMPT="%{${fg_bold[white]}%}(env: %{${fg[green]}%}`basename \"$VIRTUAL_ENV\"`%
 # don't get caught off-guard
 proj_name=$(echo $VIRTUAL_ENV|awk -F'/' '{print $NF}')
 mkdir -p $DEV/$proj_name/src
+mkdir -p $DEV/$proj_name/data
 
 cd () {
     if (( $# == 0 ))
