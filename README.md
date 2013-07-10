@@ -42,7 +42,8 @@ _Note:_ Install [RVM](#ruby) before.
 
 #### UNIX tools
 
-    brew install wget nmap htop-osx mobile-shell automake glib bash tree ifstat tcpdump
+    brew install wget nmap htop-osx mobile-shell automake glib bash
+    tree ifstat tcpdump
 
 Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 
@@ -64,8 +65,8 @@ And add the extension to your `~/.hgrc`.
 
 For image processing and plotting:
 
-    brew install jpeg libpng libffi giflib boost protobuf lzlib grapviz gnuplot libsvg
-    svg2png svg2pdf xpdf ghostscript
+    brew install jpeg libpng libffi giflib boost protobuf lzlib
+    grapviz gnuplot libsvg svg2png svg2pdf xpdf ghostscript
 
 For text processing:
 
@@ -73,7 +74,8 @@ For text processing:
 
 For evented architecture:
 
-    brew install libevent libuv zeromq freetype freexl fontconfig fontforge
+    brew install libevent libuv zeromq freetype freexl fontconfig
+    fontforge
 
 For encryption:
 
@@ -166,6 +168,10 @@ Change your default terminal with
     chsh -s /bin/zsh
 
 Or directly in iTerm preferences.
+
+#### Emails
+
+    brew install isync
 
 #### LaTeX
 
