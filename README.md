@@ -67,6 +67,7 @@ For image processing and plotting:
 
     brew install jpeg libpng libffi giflib boost protobuf lzlib
     grapviz gnuplot libsvg svg2png svg2pdf xpdf ghostscript
+    imagemagick
 
 For text processing:
 
