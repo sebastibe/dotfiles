@@ -172,7 +172,11 @@ Or directly in iTerm preferences.
 
 #### Emails
 
-    brew install isync
+    brew install isync mu html2text gnutls
+
+    pip install offlineimap
+
+A good webmail client: [mailpile](http://mailpile.is/)
 
 #### LaTeX
 
