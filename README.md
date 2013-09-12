@@ -71,7 +71,7 @@ For image processing and plotting:
 
 For text processing:
 
-    brew install gettext readline aspell xapian markdown w3m
+    brew install gettext readline aspell xapian markdown w3m highlight
 
 For evented architecture:
 
