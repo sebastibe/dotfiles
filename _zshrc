@@ -3,8 +3,9 @@
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+export EMACS=/usr/local/Cellar/emacs-mac/emacs-24.3-mac-4.2/bin/emacs
 alias em="emacsclient -n"
-export EDITOR="em"
+export EDITOR="emacsclient -n"
 export SHELL="/bin/zsh"
 
 # Path to development folder
@@ -14,7 +15,7 @@ export DEPLOY_USER="seb"
 # Path to your oh-my-zsh configuration.
 export ZSH=$DEV/oh-my-zsh
 
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$HOME/Library/Python/2.7/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$HOME/Library/Python/2.7/bin:$HOME/.rvm/bin:$PATH:$HOME/go/bin"
 
 #export ZSH_THEME="powerline"  # prose, agnoster are also good
 
@@ -60,7 +61,6 @@ export VIRTUAL_ENV_DISABLE_PROMPT="true"
 source ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # Ruby
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export rvm_path=$HOME/.rvm
 source $rvm_path/scripts/rvm
 
@@ -68,3 +68,6 @@ source $rvm_path/scripts/rvm
 
 # Python
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
+
+# Go
+export GOPATH=$HOME/go

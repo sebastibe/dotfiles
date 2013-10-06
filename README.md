@@ -117,6 +117,8 @@ For further integration with emacs, ropemacs is highly recommended:
 
     brew install go
 
+    go get code.google.com/p/rog-go/exp/cmd/godef
+
 #### Ruby
 
     brew install libyaml libxml2 libxslt libksba
