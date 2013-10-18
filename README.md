@@ -195,6 +195,7 @@ A good webmail client: [mailpile](http://mailpile.is/)
 * [keyremap4macbook](https://pqrs.org/macosx/keyremap4macbook/) Remap
   your keyboard
 * [slate](https://github.com/jigish/slate) Window management
+* [f.lux](http://justgetflux.com/) To save your eyes
 
 And others also availables through the App store:
 
