@@ -28,6 +28,15 @@ From this top-level directory.
 
     /usr/bin/ruby -e "$(/usr/bin/curl -fksSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
 
+With [brew-cask](https://github.com/phinze/homebrew-cask) to manage Mac
+applications binaries:
+
+```sh
+$ brew tap phinze/homebrew-cask
+$ brew install brew-cask
+$ brew cask install google-chrome
+```
+
 ### Utilities
 
 #### Terminal multiplexer
