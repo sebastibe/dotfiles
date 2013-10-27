@@ -19,6 +19,7 @@ export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/shar
 
 #export ZSH_THEME="powerline"  # prose, agnoster are also good
 
+export DISABLE_CORRECTION="true"
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
 
