@@ -93,7 +93,9 @@ For encryption:
 
 #### Databases
 
-    brew install sqlite redis postgresql cassandra hdf5
+    brew install sqlite redis postgresql cassandra hdf5 mongodb
+
+* [Robomongo](http://robomongo.org/) MongoDB management tool
 
 #### Python
 
