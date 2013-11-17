@@ -118,7 +118,7 @@ and then work in your virtual environments.
 
 For further integration with emacs, ropemacs is highly recommended:
 
-    pip install rope ropemacs ropemode elpy
+    pip install rope ropemacs ropemode elpy jedi epc
 
 #### Clojure
 
@@ -190,6 +190,14 @@ Or directly in iTerm preferences.
     pip install offlineimap
 
 A good webmail client: [mailpile](http://mailpile.is/)
+
+#### Files Recovery
+
+Recover lost partitions and/or make non-booting disks bootable again
+when these symptoms are caused by faulty software, certain types of
+viruses or human error.
+
+    brew install testdisk
 
 #### LaTeX
 
