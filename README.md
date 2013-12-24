@@ -60,7 +60,7 @@ Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 
 #### Versionning tools
 
-    brew install git git-crypt legit bazaar mercurial svn
+    brew install git git-crypt legit bazaar mercurial svn cvs
 
 [Hg-Git](http://hg-git.github.io/) is a plugin for Mercurial, adding
 the ability to push to and pull from a Git server repository from
