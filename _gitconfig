@@ -40,4 +40,4 @@
     user = sebastibe
 
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain
