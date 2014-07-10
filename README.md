@@ -52,7 +52,7 @@ _Note:_ Install [RVM](#ruby) before.
 #### UNIX tools
 
     brew install wget nmap htop-osx mobile-shell automake glib bash
-    tree ifstat tcpdump
+    tree ifstat tcpdump lzop
 
 Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 
