@@ -39,13 +39,14 @@ export PGHOST=/tmp
 export VIRTUALENVWRAPPER_LOG_DIR="logs"
 export WORKON_HOME=$DEV
 source /usr/local/bin/virtualenvwrapper.sh
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
 
 alias bpython="python -m bpython.cli"
 
 # check https://github.com/zsh-users/zsh-syntax-highlighting
-plugins=(git brew fabric django pip osx vagrant python gem supervisor screen\
- node npm virtualenv virtualenvwrapper bower clipboard zsh-syntax-highlighting\
- rvm autojump tmuxinator postgres redis-cli celery grunt yeoman)
+plugins=(git git-flow brew fabric django pip osx vagrant python gem supervisor\
+ screen node npm virtualenv virtualenvwrapper bower clipboard zsh-syntax-highlighting\
+ rvm autojump tmuxinator postgres redis-cli celery grunt yeoman ansible)
 
 source $ZSH/oh-my-zsh.sh
 
