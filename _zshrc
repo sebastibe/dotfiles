@@ -15,7 +15,7 @@ export DEPLOY_USER="seb"
 # Path to your oh-my-zsh configuration.
 export ZSH=$DEV/oh-my-zsh
 
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$HOME/Library/Python/2.7/bin:$HOME/.rvm/bin:$PATH:$HOME/go/bin"
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$HOME/Library/Python/2.7/bin:$HOME/.rvm/bin:$PATH:$HOME/go/bin:/Applications/Postgres.app/Contents/Versions/9.3/bin"
 
 #export ZSH_THEME="powerline"  # prose, agnoster are also good
 
