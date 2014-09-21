@@ -81,6 +81,7 @@ For image processing and plotting:
 For text processing:
 
     brew install gettext readline aspell xapian markdown w3m highlight
+    the_silver_searcher
 
 For evented architecture:
 
