@@ -14,7 +14,7 @@ fi
 
 # set PATH so it includes user's private bin or /usr/local/bin if it exists
 if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+    PATH="/usr/local/share/npm/bin:$HOME/bin:$PATH"
 fi
 
 # update environment.plist
