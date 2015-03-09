@@ -12,12 +12,12 @@ mkdir -p $DEV/$proj_name/data
 cd () {
     if (( $# == 0 ))
     then
-	if (( $# == 0 ))
-	then
+        if (( $# == 0 ))
+        then
             builtin cd $VIRTUAL_ENV/src
-	else
-	    builtin cd $VIRTUAL_ENV
-	fi
+        else
+            builtin cd $VIRTUAL_ENV
+        fi
     else
         builtin cd "$@"
     fi

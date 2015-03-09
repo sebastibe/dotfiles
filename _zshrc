@@ -1,78 +1,88 @@
-# Disclaimer: this zsh config use my own fork of oh-my-zsh
-# locales
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-
-export EMACS=/usr/local/Cellar/emacs-mac/emacs-24.3-mac-4.2/bin/emacs
-alias em="emacsclient -n"
-export EDITOR="emacsclient -n"
-export SHELL="/bin/zsh"
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
 
 # Path to development folder
 export DEV=$HOME/Dev
 export DEPLOY_USER="seb"
+export DEFAULT_USER="seb"
 
-# Path to your oh-my-zsh configuration.
-export ZSH=$DEV/oh-my-zsh
+# Locales
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$HOME/Library/Python/2.7/bin:$HOME/.rvm/bin:$PATH:$HOME/go/bin:/Applications/Postgres.app/Contents/Versions/9.3/bin"
+# GO
+export GOPATH=$DEV/go
 
-#export ZSH_THEME="powerline"  # prose, agnoster are also good
+# Set the list of directories that Zsh searches for programs.
+path=(
+    /usr/local/{bin,sbin}
+    /usr/local/share/npm/bin
+    $GOPATH/bin
+    $HOME/.cabal/bin
+    /Applications/Postgres.app/Contents/Versions/9.4/bin
+    /usr/local/heroku/bin
+    $HOME/.pyenv/shims
+    $path
+)
 
-export DISABLE_CORRECTION="true"
-# Set to this to use case-sensitive completion
-# export CASE_SENSITIVE="true"
+# OSX
+alias fixow='/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;echo "Open With has been rebuilt, Finder will relaunch"'
 
-# Comment this out to disable weekly auto-update checks
-# export DISABLE_AUTO_UPDATE="true"
+# Tmux
+alias tma='tmux attach -d -t'
+alias tmn='tmux new -s $(basename $(pwd))'
+alias tml='tmux list-sessions'
 
-# Uncomment following line if you want to disable colors in ls
-# export DISABLE_LS_COLORS="true"
+# Emacs
+alias em="emacsclient -n"
+export EDITOR="emacsclient -n"
+export SHELL="/bin/zsh"
 
-# Uncomment following line if you want to disable autosetting terminal title.
-export DISABLE_AUTO_TITLE="true"
+# Bower
+alias bower='noglob bower'
 
-# Configuration for postgres
+# Postgres
 export PGHOST=/tmp
 
-# Virtualenv wrapper
-export VIRTUALENVWRAPPER_LOG_DIR="logs"
+# Python
 export WORKON_HOME=$DEV
-source /usr/local/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_LOG_DIR="logs"
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV='true'
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+pyenv virtualenvwrapper
+alias bpython="python -m bpython.cli"
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 
-alias bpython="python -m bpython.cli"
+# Prezto modules
+zstyle ':prezto:load' pmodule \
+       'environment' \
+       'terminal' \
+       'editor' \
+       'history' \
+       'history-substring-search' \
+       'directory' \
+       'spectrum' \
+       'utility' \
+       'completion' \
+       'homebrew' \
+       'osx' \
+       'ruby' \
+       'rails' \
+       'git' \
+       'node' \
+       'python' \
+       'haskell' \
+       'syntax-highlighting' \
+       'tmux' \
+       'utility' \
+       'prompt'
 
-# check https://github.com/zsh-users/zsh-syntax-highlighting
-plugins=(git git-flow brew fabric django pip osx vagrant python gem supervisor\
- screen node npm virtualenv virtualenvwrapper bower clipboard zsh-syntax-highlighting\
- rvm autojump tmuxinator postgres redis-cli celery grunt yeoman ansible)
-
-source $ZSH/oh-my-zsh.sh
-
-# Powerline setup
-export DEFAULT_USER="seb"
-export POWERLINE_HIDE_HOST_NAME="true"
-export POWERLINE_DETECT_SSH="true"
-export TERM="xterm-256color"
-
-# Env name is already displayed in powerline
-export VIRTUAL_ENV_DISABLE_PROMPT="true"
-
-# Require powerline: pip install --user git+git://github.com/Lokaltog/powerline
-source ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
-
-# Ruby
-export rvm_path=$HOME/.rvm
-source $rvm_path/scripts/rvm
-
-[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
-
-# Python
-eval "$(pyenv init -)"
-
-# Go
-export GOPATH=`pwd`
+# Presto Theme
+zstyle ':prezto:module:prompt' theme 'superlinh'
 
 # iTerm2 window/tab color commands
 #   Requires iTerm2 >= Build 1.0.0.20110804
@@ -107,7 +117,7 @@ _archey() {
     if hash archey 2>/dev/null; then
         archey
     else
-        echo -ne "You should install Archey"
+        echo -ne "$ brew install archey"
     fi
 }
 
