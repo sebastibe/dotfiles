@@ -57,6 +57,9 @@ pyenv virtualenvwrapper
 alias bpython="python -m bpython.cli"
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 
+# Node.js / Io.js
+source ~/.nvm/nvm.sh
+
 # Prezto modules
 zstyle ':prezto:load' pmodule \
        'environment' \
