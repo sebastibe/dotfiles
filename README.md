@@ -102,6 +102,12 @@ For text processing:
 $ brew install gettext readline aspell xapian markdown w3m highlight ag
 ```
 
+For some programs you will need to force the linking
+
+```sh
+brew link gettext --force
+```
+
 And font management:
 
 ```sh
