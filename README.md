@@ -380,3 +380,13 @@ $ brew cask install transmission
 ```sh
 $ brew cask install slack
 ```
+
+#### Powerline
+
+```sh
+pip install powerline-status
+```
+
+```sh
+git clone https://github.com/powerline/fonts
+```

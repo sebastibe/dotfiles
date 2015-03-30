@@ -1,8 +1,27 @@
-# path for node.js and homebrew
+# Path to development folder
+export DEV=$HOME/Dev
+export DEPLOY_USER="seb"
+export DEFAULT_USER="seb"
+
+# Path for node.js and homebrew
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$HOME/Library/Python/2.7/bin:$PATH"
 
-. ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/bash/powerline.sh
+# Python: Pyenv required
+export WORKON_HOME=$DEV
+export VIRTUALENVWRAPPER_LOG_DIR="logs"
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV='true'
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+pyenv virtualenvwrapper
 
 alias bpython="python -m bpython.cli"
 
+# powerline
+. $HOME/.pyenv/version/2.7.9/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+
+# Ruby
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# NodeJS / IOJS
+source ~/.nvm/nvm.sh
