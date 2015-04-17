@@ -5,7 +5,10 @@ Some dotfiles and settings mainly for MAC OS X.
 
 ## Instructions
 
-For almost everything you need to have [XCode](https://developer.apple.com/xcode/) installed.
+For almost everything you need to have [XCode](https://developer.apple.com/xcode/) installed
+as well as the XCode command tools. You can install them with the following command:
+
+    xcode-select --install
 
 ### Creating source files
 
