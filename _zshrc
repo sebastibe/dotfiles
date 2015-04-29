@@ -21,7 +21,7 @@ path=(
     /usr/local/share/npm/bin
     $GOPATH/bin
     $HOME/.cabal/bin
-    /Applications/Postgres.app/Contents/Versions/9.4/bin
+    /Applications/Postgres.app/Contents/Versions/9.4/{bin,lib}
     /usr/local/heroku/bin
     $HOME/.pyenv/shims
     $path
