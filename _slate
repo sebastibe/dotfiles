@@ -8,6 +8,7 @@ alias airmail 'Airmail'
 alias pages 'Pages'
 alias keynote 'Keynote'
 alias dash 'Dash'
+alias slack 'Slack'
 
 bind u:ctrl;shift focus ${editor}
 bind b:ctrl;shift focus ${browser}
@@ -19,3 +20,4 @@ bind a:ctrl;shift focus ${airmail}
 bind p:ctrl;shift focus ${pages}
 bind k:ctrl;shift focus ${keynote}
 bind d:ctrl;shift focus ${dash}
+bind s:ctrl;shift focus ${slack}
