@@ -73,6 +73,17 @@ $ brew install wget nmap htop-osx mobile-shell automake glib bash tree ifstat tc
 
 Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 
+#### Cheat
+
+Create and view interactive cheatsheets on the command-line. It was
+designed to help remind *nix system administrators of options for
+commands that they use frequently, but not frequently enough to
+remember.
+
+```sh
+$ brew install cheat
+```
+
 #### Versionning
 
 ```sh

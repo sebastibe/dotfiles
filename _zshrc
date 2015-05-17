@@ -126,3 +126,6 @@ _archey() {
 }
 
 _archey
+
+# Cheat
+export CHEATCOLORS=true
