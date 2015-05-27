@@ -24,6 +24,7 @@ path=(
     /Applications/Postgres.app/Contents/Versions/9.4/{bin,lib}
     /usr/local/heroku/bin
     $HOME/.pyenv/shims
+    $HOME/.cask/bin
     $path
 )
 

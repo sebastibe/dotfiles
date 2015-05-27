@@ -270,6 +270,12 @@ and then
 brew install emacs-mac
 ```
 
+Install Cask for Emacs package management:
+
+```sh
+brew install cask
+```
+
 #### [zsh](http://www.zsh.org/)
 
 ```sh

@@ -25,6 +25,9 @@
 ;; display human friendly info in dired
 (setq dired-listing-switches "-alsh")
 
+;; cask
+(require 'cask "/usr/local/share/emacs/site-lisp/cask.el")
+
 ;; pull in some packages
 (prelude-require-packages '(jade-mode virtualenvwrapper ag ein
                                       magit-gitflow dash-at-point
