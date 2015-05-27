@@ -26,7 +26,7 @@
 (setq dired-listing-switches "-alsh")
 
 ;; pull in some packages
-(prelude-require-packages '(jade-mode virtualenvwrapper ag
+(prelude-require-packages '(jade-mode virtualenvwrapper ag ein
                                       magit-gitflow dash-at-point
                                       markdown-toc color-theme-solarized
                                       color-theme-sanityinc-tomorrow
@@ -40,5 +40,7 @@
 ;; pyenv
 (pyenv-mode)
 
+;; iPython Notebook Support
+(require 'ein)
 
 (provide 'custom)
