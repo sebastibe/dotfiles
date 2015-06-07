@@ -404,7 +404,7 @@ $ brew cask install slack
 #### Powerline
 
 ```sh
-pip install powerline-status
+pip install powerline-status psutil
 ```
 
 ```sh
