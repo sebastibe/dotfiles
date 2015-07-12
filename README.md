@@ -203,8 +203,12 @@ $ brew install leiningen
 $ brew install go
 ```
 
+"go get" the basics
+
 ```sh
- $ go get code.google.com/p/rog-go/exp/cmd/godef
+$ go get golang.org/x/tools/cmd/godef
+$ go get golang.org/x/tools/cmd/godoc
+$ go get golang.org/x/tools/cmd/vet
 ```
 
 #### Ruby

@@ -14,12 +14,14 @@ export LANG=en_US.UTF-8
 
 # GO
 export GOPATH=$DEV/go
+export GOROOT=/usr/local/opt/go/libexec
 
 # Set the list of directories that Zsh searches for programs.
 path=(
     /usr/local/{bin,sbin}
     /usr/local/share/npm/bin
     $GOPATH/bin
+    $GOROOT/bin
     $HOME/.cabal/bin
     /Applications/Postgres.app/Contents/Versions/9.4/{bin,lib}
     /usr/local/heroku/bin
