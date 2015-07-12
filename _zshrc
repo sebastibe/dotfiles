@@ -84,7 +84,8 @@ zstyle ':prezto:load' pmodule \
        'syntax-highlighting' \
        'tmux' \
        'utility' \
-       'prompt'
+       'prompt' \
+       'emacs'
 
 # Presto Theme
 zstyle ':prezto:module:prompt' theme 'superlinh'
