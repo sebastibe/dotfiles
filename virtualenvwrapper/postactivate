@@ -9,6 +9,9 @@ proj_name=$(echo $VIRTUAL_ENV|awk -F'/' '{print $NF}')
 mkdir -p $DEV/$proj_name/src
 mkdir -p $DEV/$proj_name/data
 
+# go
+GOPATH=$VIRTUAL_ENV
+
 cd () {
     if (( $# == 0 ))
     then
