@@ -152,6 +152,13 @@ For Postgres we use the Postgres.app
 $ brew cask install postgres
 ```
 
+[Postgres CLI](https://github.com/dbcli/pgcli), Postgres CLI with
+autocompletion and syntax highlighting
+
+```sh
+$ brew install pgcli
+```
+
 Goodies:
 
 * [Robomongo](http://robomongo.org/) MongoDB management tool
