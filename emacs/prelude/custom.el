@@ -43,6 +43,9 @@
 ;; pyenv
 (pyenv-mode)
 
+;; virtualenvwrapper
+(setq venv-location "~/Dev")
+
 ;; iPython Notebook Support
 (require 'ein)
 
