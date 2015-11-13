@@ -9,6 +9,7 @@ alias pages 'Pages'
 alias keynote 'Keynote'
 alias dash 'Dash'
 alias slack 'Slack'
+alias calendar 'Calendar'
 
 bind u:ctrl;shift focus ${editor}
 bind b:ctrl;shift focus ${browser}
@@ -21,3 +22,4 @@ bind p:ctrl;shift focus ${pages}
 bind k:ctrl;shift focus ${keynote}
 bind d:ctrl;shift focus ${dash}
 bind s:ctrl;shift focus ${slack}
+bind c:ctrl;shift focus ${calendar}
