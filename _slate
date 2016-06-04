@@ -1,6 +1,6 @@
 alias editor 'Emacs'
 alias browser 'Google Chrome'
-alias terminal 'iTerm'
+alias terminal 'iTerm2'
 alias message 'Messages'
 alias omnigraffle 'OmniGraffle Professional'
 alias evernote 'Evernote'
