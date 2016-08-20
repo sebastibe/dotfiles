@@ -385,7 +385,7 @@ $ brew cask install flux
 [XQuartz](http://xquartz.macosforge.org/) X.Org Windows system for OS X (needed for gnuplot):
 
 ```sh
-$ brew cask install xquartz
+$ brew cask install xquartz dialog
 ```
 
 And others also availables through the App store:
@@ -409,7 +409,7 @@ $ brew cask install transmission
 #### Team Communication
 
 ```sh
-$ brew cask install slack
+$ brew cask install slack franz
 ```
 
 #### Powerline
