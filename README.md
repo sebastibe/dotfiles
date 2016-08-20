@@ -27,7 +27,7 @@ becomes
 
 It's as simple as running:
 
-```sh
+```bash
 $ ./install.sh
 ```
 
@@ -39,13 +39,13 @@ From this top-level directory.
 
 * [Homebrew](http://mxcl.github.com/homebrew/)
 
-```sh
+```bash
 $ /usr/bin/ruby -e "$(/usr/bin/curl -fksSL https://raw.github.com/mxcl/homebrew/master/Library/Contributions/install_homebrew.rb)"
 ```
 
 * [Homebrew Cask](http://caskroom.io) to manage Mac applications binaries:
 
-```sh
+```bash
 $ brew install caskroom/cask/brew-cask
 ```
 
@@ -53,13 +53,13 @@ $ brew install caskroom/cask/brew-cask
 
 #### Terminal Multiplexer with `tmux`
 
-```sh
+```bash
 $ brew install tmux
 ```
 
 A good addon to create and manage tmux sessions easily: [tmuxinator](https://github.com/aziz/tmuxinator)
 
-```sh
+```bash
 gem install tmuxinator
 ```
 
@@ -67,7 +67,7 @@ _Note:_ Install [RVM](#ruby) before.
 
 #### UNIX tools
 
-```sh
+```bash
 $ brew install wget nmap htop-osx mobile-shell automake glib bash tree ifstat tcpdump lzop findutils
 ```
 
@@ -80,13 +80,13 @@ designed to help remind *nix system administrators of options for
 commands that they use frequently, but not frequently enough to
 remember.
 
-```sh
+```bash
 $ brew install cheat
 ```
 
 #### Versionning
 
-```sh
+```bash
 $ brew install git git-crypt legit bazaar mercurial svn cvs git-flow-avh
 ```
 
@@ -94,7 +94,7 @@ $ brew install git git-crypt legit bazaar mercurial svn cvs git-flow-avh
 the ability to push to and pull from a Git server repository from
 Mercurial:
 
-```sh
+```bash
 $ easy_install hg-git
 ```
 
@@ -112,50 +112,50 @@ With [XQuartz](http://xquartz.macosforge.org/landing/) you can also install `xpd
 
 For text processing:
 
-```sh
+```bash
 $ brew install gettext readline aspell xapian markdown w3m highlight ag
 ```
 
 For some programs you will need to force the linking
 
-```sh
+```bash
 brew link gettext --force
 ```
 
 And font management:
 
-```sh
+```bash
 $ brew install freetype freexl fontconfig fontforge
 ```
 
 For evented architecture:
 
-```sh
+```bash
 $ brew install libevent libuv zeromq
 ```
 
 For encryption:
 
-```sh
+```bash
 brew install gpg openssl nacl
 ```
 
 #### Databases
 
-```sh
+```bash
 $ brew install sqlite redis cassandra hdf5 mongodb
 ```
 
 For Postgres we use the Postgres.app
 
-```sh
+```bash
 $ brew cask install postgres
 ```
 
 [Postgres CLI](https://github.com/dbcli/pgcli), Postgres CLI with
 autocompletion and syntax highlighting
 
-```sh
+```bash
 $ brew install pgcli
 ```
 
@@ -168,7 +168,7 @@ Goodies:
 To manage different Python versions at the user level, one way to go is to use
 [pyenv](https://github.com/yyuu/pyenv):
 
-```sh
+```bash
 $ brew install pyenv pyenv-virtualenv pyenv-virtualenvwrapper
 ```
 
@@ -177,14 +177,14 @@ install at least one version of python.
 
 For example, install 2.7.9 and set it as global in pyenv.
 
-```sh
+```bash
 $ pyenv install 2.7.9
 $ pyenv global 2.7.9
 ```
 
 To setup a virtualenvwrapper into your shell, just run
 
-```sh
+```bash
 pyenv virtualenvwrapper
 ```
 
@@ -194,25 +194,25 @@ And then work in your virtual environments.
 
 For further integration with emacs, ropemacs is highly recommended:
 
-```sh
+```bash
 $ pip install rope ropemacs ropemode elpy jedi epc
 ```
 
 #### Clojure
 
-```sh
+```bash
 $ brew install leiningen
 ```
 
 #### Go
 
-```sh
+```bash
 $ brew install go
 ```
 
 "go get" the basics
 
-```sh
+```bash
 $ go get golang.org/x/tools/cmd/godef
 $ go get golang.org/x/tools/cmd/godoc
 $ go get golang.org/x/tools/cmd/vet
@@ -220,7 +220,7 @@ $ go get golang.org/x/tools/cmd/vet
 
 #### Ruby
 
-```sh
+```bash
 $ brew install libyaml libxml2 libxslt libksba
 ```
 
@@ -228,7 +228,7 @@ $ brew install libyaml libxml2 libxslt libksba
   manage, and work with multiple ruby environments from interpreters
   to sets of gems:
 
-```sh
+```bash
 curl -L https://get.rvm.io | bash -s stable --ruby
 ```
 
@@ -236,7 +236,7 @@ An **RVM** cheatsheet can be found [here](http://cheat.errtheblog.com/s/rvm).
 
 #### Rust
 
-```sh
+```bash
 $ brew install rust
 ```
 
@@ -244,21 +244,21 @@ $ brew install rust
 
 We install node/iojs using Node Version Manager (nvm), a simple bash script to manage multiple active node.js versions:
 
-```sh
+```bash
 $ brew install nvm
 ```
 
 Add the following to $HOME/.bashrc, $HOME/.zshrc, or your shell's
 equivalent configuration file:
 
-```sh
+```bash
 $ export NVM_DIR=~/.nvm
 $ source $(brew --prefix nvm)/nvm.sh
 ```
 
 Now use nvm to install the latest stable release of node:
 
-```sh
+```bash
 $ nvm install stable
 ```
 
@@ -271,31 +271,31 @@ Or a good OS X port by @railwaycat can be found there:
 [emacs-mac-port](https://github.com/railwaycat/emacs-mac-port) and can
 be easilly installed with brew:
 
-```sh
+```bash
 $ brew tap railwaycat/emacsmacport
 ```
 
 and then
 
-```sh
+```bash
 brew install emacs-mac
 ```
 
 Install Cask for Emacs package management:
 
-```sh
+```bash
 brew install cask
 ```
 
 #### [zsh](http://www.zsh.org/)
 
-```sh
+```bash
 $ brew install zsh
 ```
 
 make it the default shell
 
-```sh
+```bash
 $ chsh -s /bin/zsh
 ```
 
@@ -307,13 +307,13 @@ $ git clone git://github.com/sebastibe/oh-my-zsh.git ~/.oh-my-zsh
 
 with zsh-syntax-highlighting in `~/.oh-my-zsh/custom/plugins`:
 
-```sh
+```bash
 $ git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
 ```
 
 or alternatively with [Pretzo](https://github.com/sorin-ionescu/prezto):
 
-```sh
+```bash
 # Uninstall oh my zsh
 $ uninstall_oh_my_zsh
 
@@ -329,7 +329,7 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
 
 #### Emails
 
-```sh
+```bash
 $ brew install isync mu html2text gnutls
 $ pip install offlineimap
 ```
@@ -342,7 +342,7 @@ Recover lost partitions and/or make non-booting disks bootable again
 when these symptoms are caused by faulty software, certain types of
 viruses or human error.
 
-```sh
+```bash
 $ brew install testdisk
 ```
 
@@ -372,19 +372,19 @@ With [Slate](https://github.com/mattr-/slate) you can:
   activate when that configuration is detected.
 * Window Hints: an intuitive way to change window focus
 
-```sh
+```bash
 $ brew cask install mattr-slate
 ```
 
 Install [f.lux](http://justgetflux.com/) To save your eyes.
 
-```sh
+```bash
 $ brew cask install flux
 ```
 
 [XQuartz](http://xquartz.macosforge.org/) X.Org Windows system for OS X (needed for gnuplot):
 
-```sh
+```bash
 $ brew cask install xquartz dialog
 ```
 
@@ -402,23 +402,23 @@ And others also availables through the App store:
 
 #### Bit Torrent
 
-```sh
+```bash
 $ brew cask install transmission
 ```
 
 #### Team Communication
 
-```sh
+```bash
 $ brew cask install slack franz
 ```
 
 #### Powerline
 
-```sh
+```bash
 pip install powerline-status psutil
 ```
 
-```sh
+```bashy
 git clone https://github.com/powerline/fonts
 ```
 
