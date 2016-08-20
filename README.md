@@ -421,3 +421,16 @@ pip install powerline-status psutil
 ```sh
 git clone https://github.com/powerline/fonts
 ```
+
+#### Notes
+
+A console client for [Evernote](https://evernote.com/):
+[Geeknote](https://github.com/jeffkowalski/geeknote)
+
+**Note:** use the fork as
+[the original](https://github.com/VitaliyRodnenko/geeknote) author has
+disapeared.
+
+``` bash
+brew install --HEAD https://raw.githubusercontent.com/jeffkowalski/geeknote/master/geeknote.rb
+```
