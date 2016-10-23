@@ -64,34 +64,6 @@ export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-# Prezto modules
-zstyle ':prezto:load' pmodule \
-       'environment' \
-       'terminal' \
-       'editor' \
-       'history' \
-       'history-substring-search' \
-       'directory' \
-       'spectrum' \
-       'utility' \
-       'completion' \
-       'homebrew' \
-       'osx' \
-       'ruby' \
-       'rails' \
-       'git' \
-       'node' \
-       'python' \
-       'haskell' \
-       'syntax-highlighting' \
-       'tmux' \
-       'utility' \
-       'prompt' \
-       'emacs'
-
-# Presto Theme
-zstyle ':prezto:module:prompt' theme 'superlinh'
-
 # iTerm2 window/tab color commands
 #   Requires iTerm2 >= Build 1.0.0.20110804
 #   http://code.google.com/p/iterm2/wiki/ProprietaryEscapeCodes
