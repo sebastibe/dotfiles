@@ -9,9 +9,18 @@
 
 ;;; Code:
 
+;; rebind C-x p to C-c p p
+(global-set-key (kbd "C-x p") 'helm-projectile-switch-project)
+
 ;; change command to meta
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier 'super)
+
+;; backup directory
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
 
 ;; mac friendly font
 (set-face-attribute 'default nil :font "Monaco-12")
@@ -29,11 +38,17 @@
 (require 'cask "/usr/local/share/emacs/site-lisp/cask.el")
 
 ;; pull in some packages
-(prelude-require-packages '(jade-mode virtualenvwrapper ag ein
-                                      magit-gitflow dash-at-point
-                                      markdown-toc color-theme-solarized
-                                      color-theme-sanityinc-tomorrow
-                                      pyenv-mode nvm))
+(prelude-require-packages '(jade-mode
+                            virtualenvwrapper
+                            ag
+                            ein
+                            magit-gitflow
+                            dash-at-point
+                            markdown-toc
+                            color-theme-solarized
+                            color-theme-sanityinc-tomorrow
+                            pyenv-mode
+                            nvm))
 
 ;; init magit-gitflow
 (require 'magit-gitflow)
