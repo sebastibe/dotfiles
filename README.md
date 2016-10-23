@@ -68,10 +68,16 @@ _Note:_ Install [RVM](#ruby) before.
 #### UNIX tools
 
 ```bash
-$ brew install wget nmap htop-osx mobile-shell automake glib bash tree ifstat tcpdump lzop findutils
+$ brew install htop-osx mobile-shell automake glib bash tree lzop findutils
 ```
 
 Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+
+#### Networking Tools
+
+```bash
+$ brew install wget nmap ifstat tcpdump mtr
+```
 
 #### Cheat
 
