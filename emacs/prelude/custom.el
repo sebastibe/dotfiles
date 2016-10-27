@@ -41,14 +41,18 @@
 (prelude-require-packages '(jade-mode
                             virtualenvwrapper
                             ag
-                            ein
                             magit-gitflow
                             dash-at-point
                             markdown-toc
+                            helm-projectile
+                            helm-ag
+                            helm-descbinds
                             color-theme-solarized
                             color-theme-sanityinc-tomorrow
                             pyenv-mode
-                            nvm))
+                            nvm
+                            paredit
+                            clj-refactor))
 
 ;; init magit-gitflow
 (require 'magit-gitflow)
@@ -63,5 +67,30 @@
 
 ;; iPython Notebook Support
 (require 'ein)
+
+;; jade
+;; Install it globally: npm install -g html2jade
+;; M-x html2jade, on the current line or region.
+(defun html2jade-line ()
+  "Converts the given html snippet to jade and insert it at point."
+  (let ((html (current-line)))
+    (kill-whole-line)
+    (insert (shell-command-to-string (format "echo '%s' | html2jade --bodyless -" html)))
+    (previous-line)
+    (indent-according-to-mode)))
+
+(defun html2jade-region (beg end)
+  "Converts the html of the region to jade."
+  (let ((html (buffer-substring-no-properties beg end)))
+    (kill-region beg end)
+    (insert (shell-command-to-string (format "echo '%s' | html2jade --bodyless -" html)))
+    (indent-region beg end)))
+
+(defun html2jade (beg end)
+  "Converts the line or the region from html to jade."
+  (interactive "r")
+  (if (region-active-p)
+      (html2jade-region beg end)
+    (html2jade-line)))
 
 (provide 'custom)
