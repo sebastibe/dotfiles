@@ -55,6 +55,7 @@ export VIRTUALENVWRAPPER_LOG_DIR="logs"
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV='true'
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 pyenv virtualenvwrapper_lazy
 
 alias bpython="python -m bpython.cli"
