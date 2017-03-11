@@ -28,6 +28,9 @@
 ;; no scroll bars
 (scroll-bar-mode -1)
 
+;; JS
+(setq-default js-indent-level 2)
+
 ;; add line numbers on the left
 ;; (global-linum-mode 1)
 
@@ -47,12 +50,17 @@
                             helm-projectile
                             helm-ag
                             helm-descbinds
+                            helm-cider
+                            rainbow-delimiters
                             color-theme-solarized
                             color-theme-sanityinc-tomorrow
                             pyenv-mode
                             nvm
                             paredit
                             clj-refactor))
+
+(add-hook 'cider-repl-mode-hook #'paredit-mode)
+(add-hook 'cider-repl-mode-hook #'rainbow-delimiters-mode)
 
 ;; init magit-gitflow
 (require 'magit-gitflow)
