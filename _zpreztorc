@@ -2,7 +2,7 @@
 # Sets Prezto options.
 #
 # Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#   Sébastien Béal <sebastibe@gmail.com>
 #
 
 #
@@ -38,6 +38,13 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'tmux' \
   'prompt'
+
+#
+# Deer
+#
+
+# Set key bindings
+# zstyle ':prezto:module:deer' key-bindings '^k'
 
 #
 # Autosuggestions
@@ -93,13 +100,15 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 #
 # Prompt
 #
-export POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir virtualenv vcs)
-export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history time)
-
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
+
+export POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
+export POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir virtualenv vcs)
+export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status pyenv time)
+
 zstyle ':prezto:module:prompt' theme 'powerlevel9k'
 
 #
@@ -124,7 +133,7 @@ zstyle ':prezto:module:prompt' theme 'powerlevel9k'
 #
 
 # Set the SSH identities to load into the agent.
-# zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'id_rsa2' 'id_github'
+zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'id_rsa2' 'id_github'
 
 #
 # Syntax Highlighting
@@ -132,13 +141,13 @@ zstyle ':prezto:module:prompt' theme 'powerlevel9k'
 
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
-# zstyle ':prezto:module:syntax-highlighting' highlighters \
-#   'main' \
-#   'brackets' \
-#   'pattern' \
-#   'line' \
-#   'cursor' \
-#   'root'
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+  'main' \
+  'brackets' \
+  'pattern' \
+  'line' \
+  'cursor' \
+  'root'
 #
 # Set syntax highlighting styles.
 # zstyle ':prezto:module:syntax-highlighting' styles \
