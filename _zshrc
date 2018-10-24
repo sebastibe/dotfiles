@@ -94,15 +94,16 @@ compdef _ssh color-ssh=ssh
 
 alias ssh=color-ssh
 
-_archey() {
-    if hash archey 2>/dev/null; then
-        archey
+_neofetch() {
+    if hash neofetch 2>/dev/null; then
+        neofetch
     else
-        echo -ne "$ brew install archey"
+        echo -ne "$ brew install neofetch"
     fi
 }
 
-_archey
+_neofetch
+curl -4 http://wttr.in/Tokyo
 
 # Cheat
 export CHEATCOLORS=true
