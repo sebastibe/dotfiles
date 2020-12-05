@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
@@ -5,8 +12,8 @@ fi
 
 # Path to development folder
 export DEV=$HOME/Dev
-export DEPLOY_USER="seb"
-export DEFAULT_USER="seb"
+export DEPLOY_USER="sebastienbeal"
+export DEFAULT_USER="sebastienbeal"
 
 # Locales
 export LC_ALL=en_US.UTF-8
@@ -23,9 +30,9 @@ path=(
     $GOPATH/bin
     $GOROOT/bin
     $HOME/.cabal/bin
-    /Applications/Postgres.app/Contents/Versions/9.4/{bin,lib}
+    /Applications/Postgres.app/Contents/Versions/13/{bin,lib}
     /usr/local/heroku/bin
-    $HOME/.pyenv/shims
+    $HOME/.pyenv/{bin,shims}
     $HOME/.cask/bin
     $path
 )
@@ -56,9 +63,10 @@ export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
 export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV='true'
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-pyenv virtualenvwrapper_lazy
+export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
+# pyenv virtualenvwrapper_lazy
 
-alias bpython="python -m bpython.cli"
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 
 # Node.js / Io.js
@@ -90,9 +98,9 @@ color-ssh() {
     fi
     ssh $*
 }
-compdef _ssh color-ssh=ssh
+# compdef _ssh color-ssh=ssh
 
-alias ssh=color-ssh
+# alias ssh=color-ssh
 
 _neofetch() {
     if hash neofetch 2>/dev/null; then
@@ -103,7 +111,10 @@ _neofetch() {
 }
 
 _neofetch
-curl -4 http://wttr.in/Tokyo
+# curl -4 http://wttr.in/Tokyo
 
 # Cheat
 export CHEATCOLORS=true
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

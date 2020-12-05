@@ -104,12 +104,12 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
 
-export POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
-export POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir virtualenv vcs)
-export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status pyenv time)
+export POWERLEVEL10K_SHORTEN_DIR_LENGTH=2
+export POWERLEVEL10K_PROMPT_ON_NEWLINE=true
+export POWERLEVEL10K_LEFT_PROMPT_ELEMENTS=(os_icon context dir virtualenv vcs)
+export POWERLEVEL10K_RIGHT_PROMPT_ELEMENTS=(status pyenv time)
 
-zstyle ':prezto:module:prompt' theme 'powerlevel9k'
+zstyle ':prezto:module:prompt' theme 'powerlevel10k'
 
 #
 # Ruby

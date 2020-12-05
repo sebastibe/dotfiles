@@ -424,7 +424,7 @@ $ brew cask install slack franz
 pip install powerline-status psutil
 ```
 
-```bashy
+```bash
 git clone https://github.com/powerline/fonts
 ```
 
