@@ -35,6 +35,8 @@
 	sync = !legit sync \"$@\"
 	publish = !legit publish \"$@\"
 	graft = !legit graft \"$@\"
+    sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d\
+          && git remote prune origin
 
 [github]
     user = sebastibe
