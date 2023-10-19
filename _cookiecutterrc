@@ -1,5 +1,0 @@
-default_context:
-    full_name: "Sébastien Béal"
-    email: "sebastibe@gmail.com"
-    github_username: "sebastibe"
-cookiecutters_dir: "~/.cookiecutters/"
